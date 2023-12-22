@@ -1,16 +1,13 @@
 #include <iostream>
-#include <conio.h>
+#include <ncurses\ncurses.h>
 
 using namespace std;
+
 int main()
 {
-  cout << "Hello!!!" << endl;
+  initscr();
+  mvaddch(5,5,81);
+  refresh();
   getch();
-
-  cout << "getch is pressed!!!" << endl;
-  getch();
-
-
-
-
+  endwin();
 }
