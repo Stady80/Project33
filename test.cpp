@@ -4,6 +4,10 @@
 
 using namespace std;
 
+const int heigh=20;
+const int weidth=40;
+const int wSymbol=219;
+
 int sum(int a, int b)
 {
     return a+b;
@@ -16,15 +20,15 @@ int inc(int a)
 
 void drawWall()
 {
-  for(int y=1;y<20;y++)
+  for(int y=1;y<heigh;y++)
   {
-    mvaddch(y,1,219);
-    mvaddch(y,40,219);
+    mvaddch(y,1,wSymbol);
+    mvaddch(y,weidth,wSymbol);
   }
-  for(int x=1;x<41;x++)
+  for(int x=1;x<=weidth;x++)
   {
-        mvaddch(1,x,219);
-    mvaddch(20,x,219);
+    mvaddch(1,x,wSymbol);
+    mvaddch(heigh,x,wSymbol);
   }
 }
 
