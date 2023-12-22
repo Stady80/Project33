@@ -16,14 +16,7 @@ int inc(int a)
 int main()
 {
   initscr();
-  mvaddch(5,5,81);
+  mvaddch(5,5,219);
   refresh();
   getch();
-
-  cout << "getch is pressed!!!" << endl;
-  getch();
-
-
-
-
 }
