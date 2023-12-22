@@ -31,7 +31,7 @@ void drawWall()
     mvaddch(heigh,x,wSymbol);
   }
   mvaddch(5,5,219);
-  mvaddch(5,6,219);
+  mvaddch(5,7,219);
 }
 
 int main()
