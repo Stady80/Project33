@@ -1,5 +1,5 @@
 #include <iostream>
-#include <conio.h>
+#include <ncurses\ncurses.h>
 
 using namespace std;
 
@@ -15,8 +15,15 @@ int inc(int a)
 
 int main()
 {
-  cout << "Hello!!!" << endl;
-  cout << sum(3,6) << endl;
-  cout << inc(6) << endl;
+  initscr();
+  mvaddch(5,5,81);
+  refresh();
   getch();
+
+  cout << "getch is pressed!!!" << endl;
+  getch();
+
+
+
+
 }
